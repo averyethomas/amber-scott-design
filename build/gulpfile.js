@@ -15,8 +15,8 @@ var gulp =      require('gulp'),
     connect =   require('gulp-connect'),
     autoprefixer = require('gulp-autoprefixer');
 
-var folder = 'deploy';
-var themeFolder = 'adventure-theme';
+var folder = 'static';
+var themeFolder = 'wp-theme';
 
 //I want to:
 
@@ -43,7 +43,7 @@ gulp.task('styles', function(){
 gulp.task('scripts', function(){
     return gulp.src('scripts/**/*.js')
         .pipe(gulp.dest('../' + folder + '/scripts/'))
-        .pipe(gulp.dest('../' + themeFolder + '/scripts/'))
+        .pipe(gulp.dest('../' + themeFolder + '/assets/js/'))
         .pipe(connect.reload());
 });
 
@@ -51,7 +51,7 @@ gulp.task('images', function(){
     return gulp.src('images/**/*.{jpg,jpeg,png,gif}')
         .pipe(gmin())
         .pipe(gulp.dest('../' + folder + '/images/'))
-        .pipe(gulp.dest('../' + themeFolder + '/images/'))
+        .pipe(gulp.dest('../' + themeFolder + '/assets/img/'))
         .pipe(connect.reload());
 });
 

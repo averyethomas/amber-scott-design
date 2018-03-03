@@ -19,36 +19,82 @@ add_action( 'wp_enqueue_scripts', array( $ngTheme, 'enqueue_scripts' ) );
 
 // NAVIGATION
 
-function cns_nav()
-{
-    wp_nav_menu(
+function asd_nav(){
+  wp_nav_menu(
     array(
-        'theme_location'  => 'main-menu',
-        'menu'            => '',
-        'container'       => false,
-        'container_class' => '',
-        'container_id'    => '',
-        'menu_class'      => 'menu',
-        'menu_id'         => '',
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu',
-        'before'          => '',
-        'after'           => '',
-        'link_before'     => '',
-        'link_after'      => '',
-        'items_wrap'      => '%3$s',
-        'depth'           => 0,
-        'walker'          => ''
-        )
-    );
+      'theme_location'  => 'main-menu',
+      'menu'            => '',
+      'container'       => false,
+      'container_class' => '',
+      'container_id'    => '',
+      'menu_class'      => 'menu',
+      'menu_id'         => '',
+      'echo'            => true,
+      'fallback_cb'     => 'wp_page_menu',
+      'before'          => '',
+      'after'           => '',
+      'link_before'     => '',
+      'link_after'      => '',
+      'items_wrap'      => '%3$s',
+      'depth'           => 0,
+      'walker'          => ''
+    )
+  );
 }
 
+function asd_social(){
+  wp_nav_menu(
+    array(
+      'theme_location'  => 'social-menu',
+      'menu'            => '',
+      'container'       => false,
+      'container_class' => '',
+      'container_id'    => '',
+      'menu_class'      => 'menu',
+      'menu_id'         => '',
+      'echo'            => true,
+      'fallback_cb'     => 'wp_page_menu',
+      'before'          => '',
+      'after'           => '',
+      'link_before'     => '',
+      'link_after'      => '',
+      'items_wrap'      => '%3$s',
+      'depth'           => 0,
+      'walker'          => ''
+    )
+  );
+}
+
+function asd_contact(){
+  wp_nav_menu(
+    array(
+      'theme_location'  => 'contact-menu',
+      'menu'            => '',
+      'container'       => false,
+      'container_class' => '',
+      'container_id'    => '',
+      'menu_class'      => 'menu',
+      'menu_id'         => '',
+      'echo'            => true,
+      'fallback_cb'     => 'wp_page_menu',
+      'before'          => '',
+      'after'           => '',
+      'link_before'     => '',
+      'link_after'      => '',
+      'items_wrap'      => '%3$s',
+      'depth'           => 0,
+      'walker'          => ''
+    )
+  );
+}
 
 function register_cns_menu()
 {
     register_nav_menus(
         array(
-            'main-menu' => __( 'Main Menu' ), // Main Navigation
+            'main-menu'		=> __( 'Main Menu' ),
+	    'social-menu' 	=> __( 'Social Menu' ),
+	    'contact-menu'	=> __( 'Contact Menu' ), 
         )
     );
 }

@@ -10,6 +10,8 @@
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body ng-app="angularApp">
     <div class="container" ng-controller="mainCtrl">
@@ -24,7 +26,7 @@
         </div>
         <div class="nav" ng-show="showMenu">
           <ul>
-            <?php cns_nav(); ?>
+            <?php asd_nav(); ?>
           </ul>
         </div>
       </header>
