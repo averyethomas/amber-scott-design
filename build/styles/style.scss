@@ -29,7 +29,7 @@ body {
       
       img{
         width: 100%;
-        max-width: 170px;
+        max-width: 220px;
       }
     }
     
@@ -50,9 +50,9 @@ body {
       width: 100%;
       
       @media all and (min-width: 768px) {
-        width: 70%;
-        float: right;
+        width: calc(70% - 3px);
         display: inline-block;
+        vertical-alignn: middle;
         
         &.ng-hide{
           display: inline-block !important;
@@ -397,6 +397,7 @@ body {
     p {
       font-size: 12px;
       margin-bottom: 10px;
+      text-transform: uppercase;
     }
     .follow {
       text-align: center;
@@ -425,6 +426,12 @@ body {
           }
         }
       }
+    }
+    img {
+      display: block;
+      width: 50%;
+      max-width: 100px;
+      margin: 0 auto 10px;
     }
     .contact {
       text-align: center;

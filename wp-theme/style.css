@@ -176,7 +176,7 @@ body header {
         width: 30%; } }
     body header .logo img {
       width: 100%;
-      max-width: 170px; }
+      max-width: 220px; }
   body header .mobileNav {
     display: inline-block;
     width: 50%;
@@ -190,9 +190,9 @@ body header {
     width: 100%; }
     @media all and (min-width: 768px) {
       body header .nav {
-        width: 70%;
-        float: right;
-        display: inline-block; }
+        width: calc(70% - 3px);
+        display: inline-block;
+        vertical-alignn: middle; }
         body header .nav.ng-hide {
           display: inline-block !important; } }
     body header .nav ul {
@@ -464,7 +464,8 @@ body footer {
   text-align: center; }
   body footer p {
     font-size: 12px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-transform: uppercase; }
   body footer .follow {
     text-align: center;
     margin: 20px auto 40px; }
@@ -484,6 +485,11 @@ body footer {
           @media all and (min-width: 768px) {
             body footer .follow ul li a {
               font-size: 42px; } }
+  body footer img {
+    display: block;
+    width: 50%;
+    max-width: 100px;
+    margin: 0 auto 10px; }
   body footer .contact {
     text-align: center;
     margin: 20px auto 40px; }

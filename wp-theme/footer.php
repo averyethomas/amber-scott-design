@@ -14,7 +14,7 @@
                     <?php asd_contact(); ?>
                 </ul>
             </div>
-            <!--LOGO -->
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-square.png" alt="Amber Scott Design, LLC" />
             <p>&COPY; Copyright <?php echo date("Y") . ' ';  bloginfo('name');?>. All rights reserved.</p>
         </div>
     </footer>

@@ -18,7 +18,7 @@
       <header>
         <div class="logo">
 	    <a href="/colorandstory-wp/">
-		<img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png">
+		<img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-long.png">
 	    </a>
 	</div>
         <div class="mobileNav" ng-click="showMenu = !showMenu">

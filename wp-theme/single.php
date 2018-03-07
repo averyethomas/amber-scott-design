@@ -91,7 +91,7 @@
 		$five = get_sub_field('image_five');
 		$six = get_sub_field('image_six');
 ?>
-		<div class="tiles" ng-if="item.acf_fc_layout == 'six'">
+		<div class="tiles">
 		  <div class="content-item">
 		    <img src="<?php echo $one['url']; ?>" alt="<?php echo $one['alt']; ?>" />
 		  </div>
