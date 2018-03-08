@@ -313,6 +313,7 @@ body .home {
             margin: 0 15px 30px;
             float: none; } }
   body .home .press {
+    margin: 100px auto 20px;
     text-align: center; }
     body .home .press .separator {
       margin-bottom: 50px; }
@@ -468,7 +469,7 @@ body footer {
     text-transform: uppercase; }
   body footer .follow {
     text-align: center;
-    margin: 20px auto 40px; }
+    margin: 100px auto 40px; }
     body footer .follow ul {
       list-style: none;
       padding: 0;
@@ -492,7 +493,7 @@ body footer {
     margin: 0 auto 10px; }
   body footer .contact {
     text-align: center;
-    margin: 20px auto 40px; }
+    margin: 100px auto 40px; }
     body footer .contact ul {
       list-style: none;
       padding: 0; }
